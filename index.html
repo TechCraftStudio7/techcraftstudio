@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechCraftStudio | Digital Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="loader">
+      <div class="loader-circle"></div>
+  </div>
+  <!-- Particle Background -->
+  <div class="particles" id="particles-js"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <div class="content-wrapper">
+    <!-- Navigation -->
+    <header>
+      <nav id="navbar">
+        <h1 class="logo animate__animated animate__fadeInLeft">TechCraftStudio</h1>  
+        <ul class="animate__animated animate__fadeInRight">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#heroi" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <section id="services">
+        <h2 class="animate__animated animate__fadeInUp">Our Services</h2>
+        <div class="services-container">
+          <a href="services/web.html" class="animate-on-scroll"> 
+            <div class="service-card">
+              <div class="service-card-inner">
+                <div class="service-front">
+                  <img class="service-image floating" src="images/photo-154.avif" alt="Web Development">
+                  <p>Website Development</p>
+                </div>
+                <div class="service-back">
+                  <h3>Website Development</h3>
+                  <p>Modern responsive websites with cutting-edge technologies</p>
+                  <div class="service-features">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="services/tele.html" class="animate-on-scroll">
+            <div class="service-card">
+              <div class="service-card-inner">
+                <div class="service-front">
+                  <img class="service-image floating" src="images/tel.jpg" alt="Telegram Bots">
+                  <p>Telegram Bots</p>
+                </div>
+                <div class="service-back">
+                  <h3>Telegram Bots</h3>
+                  <p>Automate tasks and enhance communication with custom Telegram bots</p>
+                  <div class="service-features">
+                    <span>Python</span>
+                    <span>Node.js</span>
+                    <span>API</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="services/blender.html" class="animate-on-scroll">
+            <div class="service-card">
+              <div class="service-card-inner">
+                <div class="service-front">
+                  <img class="service-image floating" src="images/blend.jpg" alt="3D Modeling">
+                  <p>3D Modeling</p>
+                </div>
+                <div class="service-back">
+                  <h3>3D Modeling</h3>
+                  <p>High-quality 3D models for visualization, games, and 3D printing</p>
+                  <div class="service-features">
+                    <span>Blender</span>
+                    <span>3D Design</span>
+                    <span>Rendering</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- About Section -->
+      <section id="heroi" class="hero">
+        <div class="hero-content">
+          <div class="text animate-on-scroll">
+            <h1 class="animate__animated animate__fadeInDown">About Us</h1>
+            <p class="animate__animated animate__fadeInLeft">We are a team of developers, designers, and engineers creating modern solutions for business and creativity. Websites, Telegram bots, 3D models, - all under one roof.</p>
+            <p class="animate__animated animate__fadeInRight">We combine programming, design, and creativity to create effective products. We work with clients, taking on the full cycle - from idea to launch.</p>
+            <p class="animate__animated animate__fadeInLeft">Our approach is individuality, quality, and simplicity. We constantly learn, develop, and improve our skills to stay at the forefront of technology.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="section">
+        <h2>Our Projects</h2>
+        <div class="portfolio-grid">
+          <a href="https://techcraftstudio7.github.io/cosmoexplore-website-maket/" class="animate-on-scroll">
+            <div class="project-card" data-text="project">
+              <img src="images/project1.png" alt="project1">
+            </div>
+          </a>
+          <a href="https://techcraftstudio7.github.io/nazar-portfolio/" class="animate-on-scroll">
+            <div class="project-card" data-text="project">
+              <img src="images/project2.png" alt="project2">
+            </div>
+          </a>
+          <a href="https://techcraftstudio7.github.io/ivan-portfolio-maket/" class="animate-on-scroll">
+            <div class="project-card" data-text="project">
+              <img src="images/project3.png" alt="project3">
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- FAQ Section-->
+      <section class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question">What is the period of website development?</button>
+            <div class="faq-answer">
+              <p>Term depends on the complexity of the project: 
+              on average development will take up to 2 weeks</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question">Is it possible to modify the site after delivery of the project?</button>
+            <div class="faq-answer">
+              <p> Yes, we provide free revisions within 14 days after delivery.  
+              Further support - from 10$/month (depends on the amount of edits).</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question">How do you pay?</button>
+            <div class="faq-answer">
+              <p>- Prepayment of 10% - to start working.  
+              - The balance 90% - after completion and your approval. </p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question">Can I edit the site myself after your development?</button>
+            <div class="faq-answer">
+              <p>Yes, but need skills or our instruction (+$20).</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question">Do I need to provide anything for 3D modelling?</button>
+            <div class="faq-answer">
+              <p> Yes, the more data - the more accurate and faster the result.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contact-form" class="animate-on-scroll">
+          <div class="form-group">
+            <input type="text" name="user_name" id="name" placeholder=" " required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" name="user_email" id="email" placeholder=" " required>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" placeholder=" " required rows="5"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Custom Alert -->
+        <div class="custom-alert-overlay" id="customAlert">
+          <div class="custom-alert">
+            <h3 class="custom-alert-title">Thank You!</h3>
+            <p class="custom-alert-message">Your message has been sent successfully. We will contact you soon.</p>
+            <button class="custom-alert-btn" id="alertCloseBtn">OK</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      
+      emailjs.init('7NPM6p3eP7bJubS9q');
+
+      const form = document.getElementById('contact-form');
+      const customAlert = document.getElementById('customAlert');
+      const alertTitle = document.querySelector('.custom-alert-title');
+      const alertMessage = document.querySelector('.custom-alert-message');
+      const alertCloseBtn = document.getElementById('alertCloseBtn');
+      let lastSubmitTime = 0;
+
+     
+      function showCustomAlert(title, message) {
+        alertTitle.textContent = title;
+        alertMessage.textContent = message;
+        customAlert.style.display = 'flex';
+      }
+
+     
+      alertCloseBtn.addEventListener('click', () => {
+        customAlert.style.display = 'none';
+      });
+
+      
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+       
+        if (form.elements['bot-trap'] && form.elements['bot-trap'].value) {
+          console.log('Bot detected');
+          return;
+        }
+
+        
+        const now = Date.now();
+        if (now - lastSubmitTime < 30000) {
+          showCustomAlert('Wait Please', 'Please wait 30 seconds before next submission.');
+          return;
+        }
+        lastSubmitTime = now;
+
+       
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+
+        try {
+          
+          await emailjs.sendForm('service_0pmtvr2', 'template_soh0y5t', form);
+
+         
+          showCustomAlert('Thank You!', 'Your message has been sent successfully. We will contact you soon.');
+          form.reset();
+        } catch (error) {
+          console.error('Error:', error);
+          
+          showCustomAlert('Error', 'Failed to send message. Please try again later.');
+        } finally {
+          
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Message';
+        }
+      });
+    </script>
+
+
+    
+
+    <!-- Footer -->
+    <footer>
+      <p>Connect with us:</p>
+      <div class="social-icons">
+        <a href="https://t.me/MrNazar777" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.tiktok.com/@mr_nazar?lang=ru-RU" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/mr.nazar.777/" target="_blank"><i class="fab fa-instagram"></i></a>
+       
+      </div>
+      <p class="rights">&copy; 2023 TechCraftStudio. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>
